@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewpoint" content = "width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link href = "weather.css" rel = "stylesheet">
+        <script src = "weather.js" defer></script>    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+
+        <div class = "container">
+            <div class = "input-container">
+                <i class="fa-solid fa-location-dot"></i>
+                <input class = "input" placeholder = "Enter Your Location">
+                <button class="fa-solid fa-magnifying-glass"></button>
+                
+            </div>
+
+            <div class = "weather-icon">
+                <img  class = "icon" src = "images/cloud.png">
+            </div>
+
+            <div class = "weather-info1">
+                <p class = "celcius-info">18C</p>
+                <p class = "additional-info">Overcoast Clouds</p>
+            </div>
+
+            <div class = "weather-info2">
+
+                <div class = "humidity">
+                    <div class = "humidity-icon">
+                        <i class = "bx bx-water"></i>
+                    </div>
+                    <div class = "humidity-info"> 
+                        <span class = "line-1-1">71%</span>
+                        <span class = "line-2-1">Humidity</span>
+                    </div>
+                </div>
+
+                <div class = "wind-speed">
+                    <div class = "wind-speed-icon">
+                        <i class = "bx bx-wind"></i>
+                    </div>
+                    <div class = "wind-info"> 
+                        <span class = "line-1-2">3Km/h</span>
+                        <span class = "line-2-2">Wind Speed</span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <script src="https://kit.fontawesome.com/e54edf2dc4.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>

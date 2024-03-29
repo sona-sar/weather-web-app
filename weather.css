@@ -1,0 +1,141 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins", sans-serif;
+
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background-image:url("images/background.jpg");
+    background-position:center;
+    background-size:cover;
+
+}
+.container{
+    position:relative;
+    width:400px;
+    height:550px;
+    background-color:rgba(255, 255, 255, .1);
+    backdrop-filter:blur(30px);
+    border-radius:16px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    border:2px solid rgba(255, 255, 255, .2);
+}
+.input-container{
+    position:relative;
+    width:100%;
+    border:2px solid rgba(255, 255, 255, .2);
+    display:flex;
+    align-items:center;
+    flex:0.1;
+    gap:10px;
+    padding:0px 15px;
+    border-radius:16px;
+}
+
+.fa-solid{
+    flex:0.05;
+    color:white;
+    cursor:pointer;
+    font-size:20px;
+}
+.fa-magnifying-glass{
+    background-color:transparent;
+    border:none;
+    transition:color 0.15s;
+}
+.fa-magnifying-glass:hover{
+    color:rgb(241, 192, 255);
+}
+.input{
+    flex:0.9;
+    border:0px;
+    font-size:15px;
+    background-color:transparent;
+    outline:none;
+    color:white;
+
+
+}
+.input::placeholder{
+    color:white;
+}
+
+
+
+.weather-icon{
+    margin-top:30px;
+    flex:0.4;
+    display:flex;
+    justify-content:center;
+    align-items:end;
+}
+.icon{
+    height:180px;
+}
+.weather-info1{
+    flex:0.25;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.celcius-info{
+    font-size:50px;
+    margin-top:-10px;
+    color:white;
+    font-weight:bold;
+}
+.additional-info{
+    font-size:20px;
+    color:white;
+    margin-top:-5px;
+}
+
+
+
+.weather-info2{
+    /* background-color:yellow; */
+    flex:0.25;
+    display:flex;
+    padding:0px 10px;
+    gap:10px;
+}
+
+.humidity, .wind-speed{
+    /* background-color:blue; */
+    flex:0.5;
+    color:white;
+    gap:5px;
+    display:flex;
+    align-items:center;
+
+}
+.humidity-info, .wind-info{
+    display:flex;
+    flex-direction:column;
+    font-size:16px;
+    
+}
+
+.humidity-icon, .wind-speed-icon{
+    display:flex;
+    flex:0.5;
+    align-items:center;
+    justify-content: center;
+}
+.bx{
+    font-size:60px;
+}
+/* 
+.weather-icon, .weather-info1, .weather-info2{
+    visibility: hidden;
+} */
